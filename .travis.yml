@@ -4,10 +4,10 @@ services:
     - docker
 
 before_install:
-    - docker build -t erickles1686/react-test -f ./client/Dockerfile.dev ./client
+    - docker build -t erickles1686/react-teste -f ./client/Dockerfile.dev ./client
 
 script:
-    - docker run -e CI=true erickles1686/react-test npm test
+    - docker run -e CI=true erickles1686/react-teste npm test
 
 after_success:
     - docker build -t erickles1686/multi-client ./client
