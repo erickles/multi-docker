@@ -11,7 +11,7 @@ script:
 
 after_success:
     - docker build -t erickles1686/multi-client ./client
-    - docker build -t erickles1686/multi-nginx ./nginx- 
+    - docker build -t erickles1686/multi-nginx ./nginx
     - docker build -t erickles1686/multi-server ./server
     - docker build -t erickles1686/multi-worker ./worker
     # Log in to the docker CLI
