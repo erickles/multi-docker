@@ -21,3 +21,6 @@ after_success:
     - docker push erickles1686/multi-nginx
     - docker push erickles1686/multi-server
     - docker push erickles1686/multi-worker
+deploy:
+    edge: true
+    provider: elasticbeanstalk
